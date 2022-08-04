@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/news.js" defer="javascript"></script>
+
+    <script src="https://kit.fontawesome.com/9575841a1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Gamja+Flower&family=Nanum+Pen+Script&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <title>알라미 /홈</title>
+</head>
+<!--<i class="fa-solid fa-heart"></i>하트버튼
+<i class="fa-solid fa-house-chimney"></i>홈버튼
+<i class="fa-solid fa-ellipsis"></i>
+<i class="fa-solid fa-ellipsis-vertical"></i>더보기버튼
+<i class="fa-solid fa-splotch"></i>별
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-and-crescent"></i>달별
+<i class="fa-solid fa-user"></i>유저
+<i class="fa-brands fa-youtube"></i>유튜브
+<i class="fa-solid fa-newspaper"></i>뉴스
+<i class="fa-solid fa-plus"></i>플러스-->
+
+<body>
+    <div id="layout">
+        <header>
+            <div class="topbtn">
+                <button type="button" id="set"><i class="fa-solid fa-gear"></i></button>
+            </div>
+            <h1>으네님, 오늘 하루도<br>
+                활기찬 하루 보내세요♥
+            </h1>
+
+            <div class="bar">
+                29<i class="fa-solid fa-star"></i>Until Level
+                <div id="minwon-bar"class="progress-bar">
+                    <div class="progress">
+                    </div>
+                    <h2>15/30<i class="fa-solid fa-star"></i></h2>
+                </div>
+                <!--웨이브-->
+                <div class="custom-shape-divider-top-1659332086">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="togglebox">
+                <section class="toggle1">
+                    <h3>07 : 30</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </section>
+                    <div class="mon">
+                        <a href="javascript:;">월</a>
+                        <a href="javascript:;">화</a>
+                        <a href="javascript:;">수</a>
+                        <a href="javascript:;">목</a>
+                        <a href="javascript:;">금</a>
+                        <a href="javascript:;">토</a>
+                        <a href="javascript:;">일</a>
+                    </div>
+
+
+                    <section class="toggle2">
+                        <h3>08 : 30</h3>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </section>
+                        <div class="mon">
+                            <a href="javascript:;">월</a>
+                            <a href="javascript:;">화</a>
+                            <a href="javascript:;">수</a>
+                            <a href="javascript:;">목</a>
+                            <a href="javascript:;">금</a>
+                            <a href="javascript:;">토</a>
+                            <a href="javascript:;">일</a>
+                        </div>
+            </div>
+
+            <button type="button" id="plus"><i class="fa-solid fa-plus"></i></button>
+        </main>
+
+        <aside id="setpage">
+            <div class="settop">
+                <button type="button"><i class="fa-solid fa-angle-left"></i></button>
+                <h2>환 경 설 정</h2>
+                <a href="#"><img src="images/user.png" alt="user"></a>
+            </div>
+
+            <section class="set">
+                <h3>개인 환경설정</h3>
+                <ul>
+                    <li><a href="javascript:;">재생설정</a><button type="button"><i class="fa-solid fa-angle-right"></i></button></li>
+                    <li><a href="javascript:;">테마</a><button type="button"><i class="fa-solid fa-angle-right"></i></button></li>
+                    <li><a href="javascript:;">SNS 계정연동</a><button type="button"><i class="fa-solid fa-angle-right"></i></button></li>
+                </ul>
+            </section>
+
+            <section class="play">
+                <h3>플레이어 관련설정</h3>
+                <ul>
+                    <li><a href="javascript:;">재생정지 예약</a><button type="button"><i class="fa-solid fa-angle-right"></i></button></li>
+                    <li><a href="javascript:;">앱정보</a><button type="button"><i class="fa-solid fa-angle-right"></i></button></li>
+                    <li><a href="javascript:;">버전정보</a><button type="button"><i class="fa-solid fa-angle-right"></i></button></li>
+                </ul>
+            </section>
+        </aside>
+
+        <footer>
+            <div class="bottombtn" id="foobtn">
+                <button class="foobtn2" type="button"><i
+                        class="fa-solid fa-house-chimney"></i></button>
+                <button class="foobtn2" type="button" onclick="location.href = 'music.html' "><i
+                        class="fa-solid fa-star-and-crescent"></i></button>
+                <button class="foobtn2" type="button" onclick="location.href = 'news.html' "><i
+                        class="fa-solid fa-newspaper"></i></button>
+                <button class="foobtn2" type="button" onclick="location.href = 'more.html' "><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

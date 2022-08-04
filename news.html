@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/news.css" rel="stylesheet">
+    <script src="js/script.js" defer="script"></script>
+
+    <script src="https://kit.fontawesome.com/9575841a1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Gamja+Flower&family=Nanum+Pen+Script&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <title>알라미 /뉴스</title>
+
+
+</head>
+<!--<i class="fa-solid fa-heart"></i>하트버튼
+<i class="fa-solid fa-house-chimney"></i>홈버튼
+<i class="fa-solid fa-ellipsis"></i>
+<i class="fa-solid fa-ellipsis-vertical"></i>더보기버튼
+<i class="fa-solid fa-splotch"></i>별
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-and-crescent"></i>달별
+<i class="fa-solid fa-user"></i>유저
+<i class="fa-brands fa-youtube"></i>유튜브
+<i class="fa-solid fa-newspaper"></i>뉴스
+<i class="fa-solid fa-plus"></i>플러스-->
+
+<body>
+    <div id="layout">
+        <header>
+            <div class="bar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Pattern</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </nav>
+                <!--웨이브-->
+                <div class="custom-shape-divider-top-1659332086">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--<label class="switch" id="toggl">
+                <input type="checkbox" checked>  ?토글스위치?
+                <span class="slider round"></span>
+            </label>-->
+            <!--page1-->
+            <div class="btnmom">
+                <button type="button" class="active">주</button>
+                <button type="button" class="activeright">월</button>
+            </div>
+
+            <div class="page1" >    
+                <div class="text">
+                    <button type="button">평균 취침시간<i class="fa-solid fa-arrow-right"></i></button>
+                    <p><b id="hou">4</b> 시간 <b id="min">5</b> 분</p>
+                    <span>2022년 08월02일 ~ 8월09일</span>
+                </div>
+    
+                <section class="chart">
+                    <canvas id="myChart"></canvas>
+                </section>
+            </div>
+<!--끝-->
+
+            <!--page2-->
+            <div class="page2">
+                <div class="text" id="text2">
+                    <button type="button">평균 취침시간<i class="fa-solid fa-arrow-right"></i></button>
+                    <p><b id="hour">4</b> 시간 <b id="mini">5</b> 분</p>
+                    <span>2022년 08월02일 ~ 9월02일</span>
+                </div>
+    
+                <section class="chart">
+                    <canvas id="Chart"></canvas>
+                </section>
+            </div>
+           
+        </main>
+
+        <footer>
+            <div class="bottombtn" id="foobtn">
+                <button class="foobtn2" type="button" onclick="location.href = 'index.html' "><i
+                        class="fa-solid fa-house-chimney"></i></button>
+                <button class="foobtn2" type="button" onclick="location.href = 'music.html' "><i
+                        class="fa-solid fa-star-and-crescent"></i></button>
+                <button class="foobtn2" type="button"><i
+                        class="fa-solid fa-newspaper"></i></button>
+                <button class="foobtn2" type="button" onclick="location.href = 'more.html' "><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

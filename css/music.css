@@ -1,0 +1,182 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    color:#333;
+    box-sizing:border-box;
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+}
+
+#layout{
+    margin:auto;
+    max-width:100%;
+}
+
+/*웨이브*/
+.custom-shape-divider-top-1659332086 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1659332086 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height:50px;
+}
+
+.custom-shape-divider-top-1659332086 .shape-fill {
+    fill: #BDCCDA;
+}
+
+/*header*/
+header{
+    background:#bdccda;
+    padding:5%;
+    line-height:250%;
+    position:relative;
+    position:fixed;
+    width:100%;
+}
+
+/*nav*/
+a{
+    display:block;
+    text-decoration:none;
+}
+
+nav{
+    width:100%;
+    font-family: 'Patrick Hand', cursive;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    width:100%;
+    text-align:center;
+}
+
+/*main*/
+main{
+    padding-top:37%;
+    padding-bottom:30%;
+    overflow:hidden;
+    /*z-index:100;
+    position:absolute;*/
+}
+
+main button{
+    border:none;
+    background:none;
+}
+
+/*sleep*/
+.sleep{
+    padding:3%;    
+}
+
+#sleep_1 {
+    margin-top:5%;
+    display:flex;
+    width:1080px;
+    left:-360px;
+    margin-bottom:7%;    
+    position: relative;
+    /***중요***/touch-action: none;
+}
+#sleep_1 ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.sleep li{
+    font-size:8px;
+    padding-left:2%;
+    width:90px;
+}
+
+.sleep img{
+    border-radius:10px;
+    display:block;
+}
+
+.sleep button{
+    font-size:1.1rem;
+    font-weight:bold;
+    margin-top:5%;
+}
+
+/*music*/
+.music{
+    padding:3%;
+}
+
+#music_1 {
+    margin-top:5%;
+    display:flex;
+    width:1080px;
+    left:-360px;
+    margin-bottom:7%;    
+    position: relative;
+    /***중요***/touch-action: none;
+}
+#music_1 ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.music li{
+    padding-left:2%;
+    font-size:8px;
+    width:90px;
+}
+
+.music img{
+    border-radius:100%;
+    display:block;
+}
+
+.music button{
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+/*footer*/
+footer{
+    width:100%;
+    position:relative;
+}
+
+.bottombtn{
+    text-align:center;
+    width:100%;
+    position:fixed;
+    background:#f6f6f6;
+    border-top:1px solid gray;
+    bottom:0;
+    padding:2%;
+}
+
+footer button{
+    margin:0 4%;
+    border:none; 
+    padding:4%; 
+    background:none;
+    font-size:1.5rem;
+}
+
+.foobtn2 i:hover{
+    color:#bdccda !important;
+    text-shadow:0px 1px 5px rgba(0, 0, 0, 0.203);
+}
